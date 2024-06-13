@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Scanner</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/filetype-pdf.ico">
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body class="v-light vertical-nav fix-header fix-sidebar">
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/></svg>
+        </div>
+    </div>
+    <div id="main-wrapper">
+        <!-- header -->
+        <div class="header">
+            <div class="nav-header">
+                <div class="brand-logo"><a href="index.html"><b><img src="../../img/filetype-pdf.png" alt=""> </b></a>
+                </div>
+                <div class="nav-control">
+                    <div class="hamburger"><span class="line"></span> <span class="line"></span> <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-left">
+                    <ul>
+                        <li class="icons position-relative"><a href="javascript:void(0)"><i class="icon-magnifier f-s-16"></i></a>
+                            <div class="drop-down animated bounceInDown">
+                                <div class="dropdown-content-body">
+                                    <div class="header-search" id="header-search">
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <div class="input-group-append"><span class="input-group-text"><i class="icon-magnifier"></i></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- hidden -->
+                <div class="header-right" hidden>
+                    <ul>
+                        <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-bell f-s-18" aria-hidden="true"></i><div class="pulse-css"></div></a>
+                            <div class="drop-down animated bounceInDown">
+                                <div class="dropdown-content-heading"><span class="text-left">Recent Notifications</span>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/1.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mr. Dmitry</div>
+                                                    <div class="notification-text">5 members joined today</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/2.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Mariam</div>
+                                                    <div class="notification-text">likes a photo of you</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/3.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Tasnim</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/4.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Ishrat Jahan</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="text-center"><a href="#" class="more-link">See All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-comment f-s-18" aria-hidden="true"></i><div class="pulse-css"></div></a>
+                            <div class="drop-down animated bounceInDown">
+                                <div class="dropdown-content-heading"><span class="text-left">2 New Messages</span>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li class="notification-unread">
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/1.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Saiul Islam</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="notification-unread">
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/2.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Ishrat Jahan</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/3.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Saiul Islam</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img class="pull-left m-r-10 avatar-img" src="../../assets/images/avatar/4.jpg" alt="">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">02:34 PM</small>
+                                                    <div class="notification-heading">Ishrat Jahan</div>
+                                                    <div class="notification-text">Hi Teddy, Just wanted to let you ...</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="text-center"><a href="#" class="more-link">See All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons">
+                            <a href="javascript:void(0)"> <i class="mdi mdi-crosshairs-gps f-s-18" aria-hidden="true"></i>
+                                <div class="pulse-css"></div>
+                            </a>
+                            <div class="drop-down dropdown-task animated bounceInDown">
+                                <div class="dropdown-content-heading"><span class="text-left">Task Update</span>
+                                </div>
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">85% Complete</small>
+                                                    <div class="notification-heading">Task One</div>
+                                                    <div class="progress">
+                                                        <div style="width: 85%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" role="progressbar" class="progress-bar progress-bar-success"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">60% Complete</small>
+                                                    <div class="notification-heading">Task Two</div>
+                                                    <div class="progress">
+                                                        <div style="width: 60%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar progress-bar-primary"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">25% Complete</small>
+                                                    <div class="notification-heading">Task Three</div>
+                                                    <div class="progress">
+                                                        <div style="width: 25%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" role="progressbar" class="progress-bar progress-bar-warning"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="notification-content"><small class="notification-timestamp pull-right">75% Complete</small>
+                                                    <div class="notification-heading">Task Four</div>
+                                                    <div class="progress">
+                                                        <div style="width: 75%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" class="progress-bar progress-bar-danger"></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="text-center"><a href="#" class="more-link">See All</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-account f-s-20" aria-hidden="true"></i></a>
+                            <div class="drop-down dropdown-profile animated bounceInDown">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="#"><i class="mdi mdi-email"></i> <span>Inbox</span></a>
+                                        </li>
+                                        <li><a href="#"><i class="mdi mdi-settings"></i> <span>Setting</span></a>
+                                        </li>
+                                        <li><a href="#"><i class="icon-lock"></i> <span>Lock Screen</span></a>
+                                        </li>
+                                        <li><a href="#"><i class="icon-power"></i> <span>Logout</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- #/ header -->
+
+        <!-- sidebar -->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Principal</li>
+                    <li><a href="index.html"><i class=" mdi mdi-view-dashboard"></i> <span class="nav-text">Dashboard</span></a>
+                    </li>
+
+
+                    <li class="nav-label">Componentes</li>
+                    
+                    <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-chart-bar"></i> <span class="nav-text">Dispositivo</span> <span class="badge badge-danger nav-badge">XR</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="datos_generales.html">Agregar documento</a>
+                            </li>
+                            <li><a href="editar_datos.html">Editar documento</a>
+                            </li>
+                            <li><a href="eliminar_datos.html">Eliminar documento</a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    
+                    <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-table-edit"></i> <span class="nav-text">Buscar</span></a>
+                        <ul aria-expanded="false">
+                            <li><a href="buscar.html">Documento</a>
+                            </li>
+                            <li><a href="buscar.html">Texto específico</a>
+                            </li>
+                            <li><a href="buscar.html">Título</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="listado.html"><i class="mdi mdi-map"></i> <span class="nav-text">Listado</span></a></li>
+                    <li class="nav-label">Extra</li>
+                    
+                    <li><a href="page-invoice.html"><i class="mdi mdi-square-edit-outline"></i> <span class="nav-text">Salir</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- #/ nk nav scroll -->
+        </div>
+        <!-- #/ sidebar -->
+        <!-- content body -->
+        <div class="content-body">
+            <div class="container">
+                <div class="row page-titles">
+                    <div class="col p-0">
+                        <h4>Buenos días, <span>Scanner</span></h4>
+                    </div>
+                    <div class="col p-0">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item active">Datos generales</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Listado documento</h4>
+                                <div class="container">
+                                    <input type="text" placeholder="BUSCAR" style="width: 50%;">
+                                   
+                                    <button style="margin-top: 5px; background-color:rgb(39, 39, 193); color: aliceblue;padding: 10px; border-color: blue;border-radius: 5px;"> buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Messages</h4>
+                                <div class="media border-bottom-1 p-t-15 p-b-15">
+                                    <img src="../../assets/images/avatar/1.jpg" class="mr-3 rounded-circle" alt="">
+                                    <div class="media-body">
+                                        <h5>John Tomas</h5>
+                                        <p class="m-b-0">I shared this on my fb wall a few months back,</p>
+                                    </div><span class="text-muted f-s-12">April 24, 2018</span>
+                                </div>
+                                <div class="media border-bottom-1 p-t-15 p-b-15">
+                                    <img src="../../assets/images/avatar/2.jpg" class="mr-3 rounded-circle" alt="">
+                                    <div class="media-body">
+                                        <h5>John Tomas</h5>
+                                        <p class="m-b-0">I shared this on my fb wall a few months back,</p>
+                                    </div><span class="text-muted f-s-12">April 24, 2018</span>
+                                </div>
+                                <div class="media p-t-15 p-b-15">
+                                    <img src="../../assets/images/avatar/3.jpg" class="mr-3 rounded-circle" alt="">
+                                    <div class="media-body">
+                                        <h5>John Tomas</h5>
+                                        <p class="m-b-0">I shared this on my fb wall a few months back,</p>
+                                    </div><span class="text-muted f-s-12">April 24, 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row" hidden>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="f-s-30 m-b-0">$6,932.60</h2><span class="f-w-600">Total Revenue</span>
+                                <div class="m-t-30">
+                                    <h4 class="f-w-600">2,365</h4>
+                                    <h6 class="m-t-10 text-muted">Online Earning <span class="pull-right">50%</span></h6>
+                                    <div class="progress m-t-15 h-6px">
+                                        <div class="progress-bar bg-primary wow animated progress-animated w-50pc h-6px" role="progressbar"></div>
+                                    </div>
+                                </div>
+                                <div class="m-t-20 m-b-20">
+                                    <h4 class="f-w-600">1,250</h4>
+                                    <h6 class="m-t-10">Offline Earning <span class="pull-right">50%</span></h6>
+                                    <div class="progress m-t-15 h-6px">
+                                        <div class="progress-bar bg-success wow animated progress-animated w-50pc h-6px" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <a href="#">
+                                    <div class="card-bg-img-1">
+                                        <div class="card-img-overlay dark-overlay-5 text-white">
+                                            <div class="position-absolute left-20 bottom-20"><span class="label label-primary label-rounded">News</span>
+                                                <h4 class="text-white m-t-20 m-b-10">The science<br>behind the dress</h4>
+                                                <div><span class="f-s-16"><i class="ti-comment m-r-10 f-s-13"></i>74</span> <span class="p-l-10 p-r-10">|</span> <span class="f-s-16"><i class="ti-heart m-r-10 f-s-13"></i>210</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="text-center"><i class="icon ion-ios-paper-outline f-s-75 text-success"></i>
+                                    <h4 class="m-b-2">Knowledge Base</h4>
+                                    <p class="p-l-30 p-r-30 m-t-15 m-b-30">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p><a href="#" class="btn btn-sm btn-success btn-block m-t-15">Browse Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="active-member">
+                                    <div class="table-responsive">
+                                        <table class="table table-xs">
+                                            <thead>
+                                                <tr>
+                                                    <th>Archivos</th>
+                                                    <th>Descargas</th>
+                                                    
+                                                    <th>Estatus</th>
+                                                    <th>Comentarios</th>
+                                                    <th>Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/1.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>125</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
+                                                    <td><span>84</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/2.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>547</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
+                                                    <td><span>36</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/3.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>557</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-danger f-s-12 m-r-10"></i> Inactivo</td>
+                                                    <td><span>55</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/4.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>753</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
+                                                    <td><span>45</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/5.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>453</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-danger f-s-12 m-r-10"></i> Inactivo</td>
+                                                    <td><span>63</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="../../assets/images/avatar/6.jpg" class="w-40px rounded-circle m-r-10" alt="">Arden Karn</td>
+                                                    <td><span>658</span>
+                                                    </td>
+                                                    
+                                                    <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
+                                                    <td><span>38</span>
+                                                    </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-lg-12" hidden>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Línea del tiempo de actividades</h4>
+                                <div class="timeline-">
+                                    <ul class="timeline">
+                                        <li>
+                                            <div class="timeline-badge primary"></div><a href="#" class="timeline-panel text-muted"><span>10 minutos antes</span><h6 class="m-t-5">Youtube, a video-sharing website, goes live.</h6></a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge warning"></div><a href="#" class="timeline-panel text-muted"><span>20 minutos antes</span><h6 class="m-t-5">Mashable, a news website and blog, goes live.</h6></a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge danger"></div><a href="#" class="timeline-panel text-muted"><span>30 minutos antes</span><h6 class="m-t-5">Google acquires Youtube.</h6></a>
+                                        </li>
+                                        <li>
+                                            <div class="timeline-badge success"></div><a href="#" class="timeline-panel text-muted"><span>15 minutos antes</span><h6 class="m-t-5">StumbleUpon is acquired by eBay.</h6></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!-- #/ content body -->
+        <!-- footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; <a href="https://ule.merkulov.design">NEXUS</a> 2024, by <a href="#" target="_blank"></a></p>
+            </div>
+        </div>
+        <!-- #/ footer -->
+    </div>
+    <!-- Common JS -->
+    <script src="../../assets/plugins/common/common.min.js"></script>
+    <!-- Custom script -->
+    <script src="../js/custom.min.js"></script>
+    <!-- Chartjs chart -->
+    <script src="../../assets/plugins/chartjs/Chart.bundle.js"></script>
+    <!-- Custom dashboard script -->
+    <script src="../js/dashboard-1.js"></script>
+</body>
+
+</html>

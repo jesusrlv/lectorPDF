@@ -238,11 +238,11 @@
                     
                     <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-chart-bar"></i> <span class="nav-text">Dispositivo</span> <span class="badge badge-danger nav-badge">XR</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Agregar documento</a>
+                            <li><a href="datos_generales.html">Agregar documento</a>
                             </li>
-                            <li><a href="#">Editar documento</a>
+                            <li><a href="editar_datos.html">Editar documento</a>
                             </li>
-                            <li><a href="#">Eliminar documento</a>
+                            <li><a href="eliminar_datos.html">Eliminar documento</a>
                             </li>
                             
                         </ul>
@@ -250,15 +250,15 @@
                     
                     <li><a class="has-arrow" href="#" aria-expanded="false"><i class="mdi mdi-table-edit"></i> <span class="nav-text">Buscar</span></a>
                         <ul aria-expanded="false">
-                            <li><a href="table-basic.html">Documento</a>
+                            <li><a href="buscar.html">Documento</a>
                             </li>
-                            <li><a href="table-layout.html">Texto específico</a>
+                            <li><a href="buscar.html">Texto específico</a>
                             </li>
-                            <li><a href="table-dt-basic.html">Título</a>
+                            <li><a href="buscar.html">Título</a>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="map-datamap.html"><i class="mdi mdi-map"></i> <span class="nav-text">Listado</span></a></li>
+                    <li><a href="listado.html"><i class="mdi mdi-map"></i> <span class="nav-text">Listado</span></a></li>
                     <li class="nav-label">Extra</li>
                     
                     <li><a href="page-invoice.html"><i class="mdi mdi-square-edit-outline"></i> <span class="nav-text">Salir</span></a>
@@ -279,55 +279,25 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Inicio</a>
                             </li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Datos generales</li>
                         </ol>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>Archivos escaneados <span class="pull-right"><i class="ion-android-download f-s-30 text-primary"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">50 Documentos</h6>
-                                <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-primary wow animated progress-animated w-50pc h-7px"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>Archivos editados <span class="pull-right"><i class="ion-android-upload f-s-30 text-success"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">90 Editados</h6>
-                                <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-success wow animated progress-animated w-90pc h-7px"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>Archivos eliminados <span class="pull-right"><i class="ion-android-list f-s-30 text-danger"></i></span></h4>
-                                <h6 class="m-t-20 f-s-14">65% Ticket Checked</h6>
-                                <div class="progress m-t-0 h-7px">
-                                    <div role="progressbar" class="progress-bar bg-danger wow animated progress-animated w-65pc h-7px"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
+
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class=" card-title">Archivos cargados</h4>
-                                <div class="f-s-30 f-w-300 text-success">35 <span class="f-s-16 text-uppercase">Docs</span>
+                                <h4 class="card-title">Formulario alta de documento</h4>
+                                <div class="container">
+                                    <input type="text" placeholder="Nombre" style="width: 50%;">
+                                    <input type="text" placeholder="Descripción" style="width: 100%; margin-top: 3px;">
+                                    <input type="file" placeholder="Descripción" style="width: 100%; margin-top: 3px;">
+                                    <button style="margin-top: 5px; background-color:rgb(39, 39, 193); color: aliceblue;padding: 10px; border-color: blue;border-radius: 5px;"> Registrar</button>
                                 </div>
-                                <a href="#" class="btn btn-outline-dark btn-flat m-t-5 m-b-30 f-s-14">Detalles</a>
-                                <canvas id="sales-graph-top"></canvas>
                             </div>
                         </div>
                     </div>
@@ -424,6 +394,7 @@
                                                     
                                                     <th>Estatus</th>
                                                     <th>Comentarios</th>
+                                                    <th>Acción</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -436,6 +407,7 @@
                                                     <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
                                                     <td><span>84</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -446,6 +418,7 @@
                                                     <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
                                                     <td><span>36</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -456,6 +429,7 @@
                                                     <td><i class="fa fa-circle-o text-danger f-s-12 m-r-10"></i> Inactivo</td>
                                                     <td><span>55</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -466,6 +440,7 @@
                                                     <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
                                                     <td><span>45</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -476,6 +451,7 @@
                                                     <td><i class="fa fa-circle-o text-danger f-s-12 m-r-10"></i> Inactivo</td>
                                                     <td><span>63</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                                 <tr>
                                                     <td>
@@ -486,6 +462,7 @@
                                                     <td><i class="fa fa-circle-o text-success f-s-12 m-r-10"></i> Activo</td>
                                                     <td><span>38</span>
                                                     </td>
+                                                    <td><button style="margin-top: 5px; background-color:rgb(193, 39, 39); color: aliceblue;padding: 2px; border-color: rgb(193, 39, 39);border-radius: 5px;"> Eliminar</button></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -497,7 +474,7 @@
                 </div>
                 <div class="row">
                     
-                    <div class="col-lg-12">
+                    <div class="col-lg-12" hidden>
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Línea del tiempo de actividades</h4>
