@@ -293,14 +293,26 @@
                             <div class="card-body">
                                 <h4 class="card-title">Formulario alta de documento</h4>
                                 <div class="container">
-                                    <input type="text" placeholder="Nombre" style="width: 50%;">
-                                    <input type="text" placeholder="Descripción" style="width: 100%; margin-top: 3px;">
-                                    <input type="file" placeholder="Descripción" style="width: 100%; margin-top: 3px;">
+                                    <select name="" id="change1" onchange="change()">
+                                        <option value=""></option>
+                                        <option value="1">Viáticos feb</option>
+                                        <option value="2">Viáticos zac</option>
+                                        <option value="3">Viáticos depto</option>
+                                    </select>
                                     <button style="margin-top: 5px; background-color:rgb(39, 39, 193); color: aliceblue;padding: 10px; border-color: blue;border-radius: 5px;"> Registrar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        function change(){
+                            var valor = document.getElementById('change1').value;
+                            if(valor == 1){
+                                confirm("Solicitar solicitud");
+                                
+                            }
+                        }
+                    </script>
                     <!-- <div class="col-xl-5">
                         <div class="card">
                             <div class="card-body">
